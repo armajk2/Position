@@ -14,7 +14,10 @@ body{
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
-    top: 20%;
+    height: 30vh;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -22,73 +25,75 @@ body{
 
 
 .face{
-    margin-left: 1%;
-    margin-top: 3%;
+    top: 30%;
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 180vh;
+    width: 100%;
 }
 
 .Eye{
     position: relative;
-    margin-left: 5%;
-    margin-top: 3%;
+    left: 5%;
+    top: 10%;
     display: flex;
-    width: 600px;
-    height: 200px;}
+    width: 60vh;
+    height: 20vh;
+    justify-content: space-between;
+}
 
 .box1{
-    height:100px;
-    margin: 10px;
+    position: relative;
+    top: 20%;
+    height: 40%;
 
 }
 
 .box2{
-    height:100px;
-    margin: 10px;
-
+    position: relative;
+    top: 20%;
+    height: 40%;
 }
 
 .box3{
-    height:100px;
-    margin: 10px;
+    position: relative;
+    top: 20%;
+    height: 40%;
 }
 
 .eye2{
     position: relative;
-    margin-left: 5%;
-    margin-top: 3%;
-    display: flex;
-    width: 300px;
-    height: 200px;
+    right: 5%;
+    top: 10%;
     opacity: 0.5;
     z-index: 1;
+    width: 60vh;
+    height: 20vh;
+
 }
 
 .box4{
-    height:100px;
+    height:50%;
     margin: 2px;
-    top: 30px;
-    right: 120px;
+    top: 10%;
+    right: 10%;
     position: absolute;
     opacity: 0.6;
 
 }
 
 .box5{
-    height:100px;
-    right: 100px;
+    height:50%;
+    right:5%;
     position: relative;
     opacity: 0.6;
-
-
+    top: 30%;
 }
 
 .box6{
-    height:110px;
-    right: 100px;
-    top: 40px;
+    height:50%;
+    right: 6%;
+    top: 30%;
     position: absolute;
     opacity: 0.6;
 
@@ -96,20 +101,21 @@ body{
 }
 
 .box7{
-    height:100px;
+    height:50%;
     right: 100px;
-    top: 50px;
+    top: 30%;
     position: absolute;
     opacity: 0.6;
 
 
 }
 .box8{
-    height:100px;
-    right: 60px;
-    top: 30px;
+    height:50%;
+    right: 6%;
+    top: 30%;
     position: absolute;
     opacity: 0.6;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -117,12 +123,14 @@ body{
     font-size: 10vh;
     position:absolute;
     color: red;
-    height: 10vh;
-    top: 10vh;
     background-color: rgb(24, 166, 38);
-    right: 11vh;
     opacity: 1;
     z-index: 1000;
+    width: 60vh;
+    right: 5%;
+    top: 40%;
+    height: 10vh;
+
 }
 
 .txt1{
@@ -130,9 +138,9 @@ body{
     position:absolute;
     color: red;
     height: 10vh;
-    top: 19vh;
+    top: 40%;
     background-color: rgb(24, 166, 38);
-    left: 11vh;
+    left: 5%;
     width: 60vh;
     opacity: 1;
     z-index: 1000;
@@ -147,40 +155,61 @@ body{
     opacity: 0;
 }
 
-.mouth{
-margin: 10vh;
-text-align: center;
-color: black;
-position: static;
-}
+
+
+
+
+
+
 
 .mouth li:nth-child(1) {
-    font-size: 15px; 
+    font-size: 2vh; 
   }
 
   .mouth li:nth-child(2) {
-    font-size: 25px; 
+    font-size: 3vh; 
   }
 
   .mouth li:nth-child(3) {
-    font-size: 35px; 
+    font-size: 4vh; 
   }
 
   .mouth li:nth-child(4) {
-    font-size: 45px; 
+    font-size: 5vh; 
   }
 
   .mouth li:nth-child(5) {
-    font-size: 55px; 
+    font-size: 10vh;
+    color: red; 
   }
 
 
+  .BB{
+    position: fixed;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    width: 100vh;
+}
+
   .Nose {
-    font-size: 100px;
+    font-size: 10vh;
     color: black;
     writing-mode: vertical-lr;
-    border: 5px solid white;
-    position: absolute;
-    left: 50%;
+    border: 5px solid black;
+    position: fixed;
+    left: 45%;
+    top: 30%;
     transform: translate(-50%, -50%);
 }
+
+.mouth{
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
