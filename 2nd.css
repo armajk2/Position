@@ -1,0 +1,130 @@
+body{
+margin: 0;
+padding: 0;
+overflow: hidden; 
+background-color: black; 
+}
+
+.main{
+    position: relative;
+height: 6vh;
+padding: 2% 2%;
+display: flex;
+justify-content: space-around;
+}
+
+.m{
+    font-size: 5vh;
+    background-color: rgb(55, 255, 255);
+    position: relative;
+    width: 20vh;
+    justify-content: center;
+    text-align: center;
+    font-family: Impact;
+    height: 7vh;
+    cursor:pointer;
+}
+
+
+.a{
+    font-size: 5vh;
+    background-color: rgb(55, 255, 255);
+    position: relative;
+    width: 20vh;
+    justify-content: center;
+    text-align: center;
+    font-family: Impact;
+    height: 7vh;
+}
+.i{
+    font-size: 5vh;
+    background-color: rgb(55, 255, 255);
+    position: relative;
+    width: 20vh;
+    justify-content: center;
+    text-align: center;
+    font-family: Impact;
+    height: 7vh;
+}
+
+.image{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    padding:0;
+    z-index: 0;
+}
+
+.hidden{
+    position: absolute;
+    width: 120vh;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.img1{
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.p{
+    background-color: white;
+}
+
+.grd{
+    left: 2%;
+    position: absolute;
+    top: 20%;
+    width: 20vh;
+    height: 40vh;
+    display: grid;
+    color: red;
+    width: 100%;
+    text-align: center;
+    grid-template-columns: 4fr 1fr 3fr 2fr ;
+    grid-template-rows: 1fr 1fr 3fr;
+    font-size: 5vh;
+    row-gap: 10vh;
+    column-gap: 8vh;
+    align-items: center;
+}
+
+.p{
+    opacity: 0.1;
+    transition: opacity 0.3 ease;
+}
+
+.p:hover {
+    opacity:1;
+    color: blueviolet;
+}
+
+.x{
+position: relative;
+height: 4vh;
+z-index: 1;
+}
+
+.x1{
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.man{
+    color: white;
+    background-color: blue;
+    z-index: 2;
+    border-radius: 50%;
+    font-size: 5vh;
+
+}
+
+
+
